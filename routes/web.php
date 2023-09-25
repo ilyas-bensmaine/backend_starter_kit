@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Resources\Backend\Admin\AdminLoginResource;
+use App\Http\Resources\Platform\User\UserLoginResource;
 use App\Models\Admin;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use Spatie\Permission\Models\Permission;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +19,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/test', function () {
-    return Admin::create([
-        'name' => 'admin',
-        'email'=> 'admin@gmail.com',
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-    ]);
+    return new AdminLoginResource(Admin::findOrFail(1));
 });

@@ -36,7 +36,7 @@ class FortifyServiceProvider extends ServiceProvider
             public function toResponse($request)
             {
                 if ($request->isAdmin()) {
-                    return new AdminLoginResource(Auth::user());
+                    return response(new AdminLoginResource(Auth::user()));
                 } else {
                     return new UserLoginResource(Auth::user());
                 }
