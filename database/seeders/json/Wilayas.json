@@ -1,0 +1,354 @@
+[{
+    "id": 1,
+    "code": "01",
+    "name": "ADRAR",
+    "arabic_name": "ادرار"
+}, {
+    "id": 2,
+    "code": "02",
+    "name": "CHLEF",
+    "arabic_name": "الشلف"
+}, {
+    "id": 3,
+    "code": "03",
+    "name": "LAGHOUAT",
+    "arabic_name": "الاغواط"
+}, {
+    "id": 4,
+    "code": "04",
+    "name": "OUM EL BOUAGHI",
+    "arabic_name": "ام البواقي"
+}, {
+    "id": 5,
+    "code": "05",
+    "name": "BATNA",
+    "arabic_name": "باتنة"
+}, {
+    "id": 6,
+    "code": "06",
+    "name": "BEJAIA",
+    "arabic_name": "بجاية"
+}, {
+    "id": 7,
+    "code": "07",
+    "name": "BISKRA",
+    "arabic_name": "بسكرة"
+}, {
+    "id": 8,
+    "code": "08",
+    "name": "BECHAR",
+    "arabic_name": "بشار"
+}, {
+    "id": 9,
+    "code": "09",
+    "name": "BLIDA",
+    "arabic_name": "البليدة"
+}, {
+    "id": 10,
+    "code": "10",
+    "name": "BOUIRA",
+    "arabic_name": "البويرة"
+}, {
+    "id": 11,
+    "code": "11",
+    "name": "TAMANRASSET",
+    "arabic_name": "تمنراست"
+}, {
+    "id": 12,
+    "code": "12",
+    "name": "TEBESSA",
+    "arabic_name": "تبسة"
+}, {
+    "id": 13,
+    "code": "13",
+    "name": "TLEMCEN",
+    "arabic_name": "تلمسان"
+}, {
+    "id": 14,
+    "code": "14",
+    "name": "TIARET",
+    "arabic_name": "تيارت"
+}, {
+    "id": 15,
+    "code": "15",
+    "name": "TIZI OUZOU",
+    "arabic_name": "تيزي وزو"
+}, {
+    "id": 16,
+    "code": "16",
+    "name": "ALGER",
+    "arabic_name": "الجزائر"
+}, {
+    "id": 17,
+    "code": "17",
+    "name": "DJELFA",
+    "arabic_name": "الجلفة"
+}, {
+    "id": 18,
+    "code": "18",
+    "name": "JIJEL",
+    "arabic_name": "جيجل"
+}, {
+    "id": 19,
+    "code": "19",
+    "name": "SETIF",
+    "arabic_name": "سطيف"
+}, {
+    "id": 20,
+    "code": "20",
+    "name": "SAIDA",
+    "arabic_name": "سعيدة"
+}, {
+    "id": 21,
+    "code": "21",
+    "name": "SKIKDA",
+    "arabic_name": "سكيكدة"
+}, {
+    "id": 22,
+    "code": "22",
+    "name": "SIDI BEL ABBES",
+    "arabic_name": "سيدي بلعباس"
+}, {
+    "id": 23,
+    "code": "23",
+    "name": "ANNABA",
+    "arabic_name": "عنابة"
+}, {
+    "id": 24,
+    "code": "24",
+    "name": "GUELMA",
+    "arabic_name": "قالمة"
+}, {
+    "id": 25,
+    "code": "25",
+    "name": "CONSTANTINE",
+    "arabic_name": "قسنطينة"
+}, {
+    "id": 26,
+    "code": "26",
+    "name": "MEDEA",
+    "arabic_name": "المدية"
+}, {
+    "id": 27,
+    "code": "27",
+    "name": "MOSTAGANEM",
+    "arabic_name": "مستغانم"
+}, {
+    "id": 28,
+    "code": "28",
+    "name": "MSILA",
+    "arabic_name": "المسيلة"
+}, {
+    "id": 29,
+    "code": "29",
+    "name": "MASCARA",
+    "arabic_name": "معسكر"
+}, {
+    "id": 30,
+    "code": "30",
+    "name": "OUARGLA",
+    "arabic_name": "ورقلة"
+}, {
+    "id": 31,
+    "code": "31",
+    "name": "ORAN",
+    "arabic_name": "وهران"
+}, {
+    "id": 32,
+    "code": "32",
+    "name": "EL BAYADH",
+    "arabic_name": "البيض"
+}, {
+    "id": 33,
+    "code": "33",
+    "name": "ILLIZI",
+    "arabic_name": "اليزي"
+}, {
+    "id": 34,
+    "code": "34",
+    "name": "BORDJ BOU ARRERIDJ",
+    "arabic_name": "برج بو عريريج"
+}, {
+    "id": 35,
+    "code": "35",
+    "name": "BOUMERDES",
+    "arabic_name": "بومرداس"
+}, {
+    "id": 36,
+    "code": "36",
+    "name": "EL-TARF",
+    "arabic_name": "الطارف"
+}, {
+    "id": 37,
+    "code": "37",
+    "name": "TINDOUF",
+    "arabic_name": "تندوف"
+}, {
+    "id": 38,
+    "code": "38",
+    "name": "TISSEMSILT",
+    "arabic_name": "تسمسيلت"
+
+
+
+}, {
+    "id": 39,
+    "code": "39",
+    "name": "EL OUED",
+    "arabic_name": "الواد"
+
+
+
+}, {
+    "id": 40,
+    "code": "40",
+    "name": "KHENCHELA",
+    "arabic_name": "خنشلة"
+
+
+
+}, {
+    "id": 41,
+    "code": "41",
+    "name": "SOUK-AHRAS",
+    "arabic_name": "سوق اهراس"
+
+
+
+}, {
+    "id": 42,
+    "code": "42",
+    "name": "TIPAZA",
+    "arabic_name": "تيبازة"
+
+
+
+}, {
+    "id": 43,
+    "code": "43",
+    "name": "MILA",
+    "arabic_name": "ميلة"
+
+
+
+}, {
+    "id": 44,
+    "code": "44",
+    "name": "AIN DEFLA",
+    "arabic_name": "عين الدفلى"
+
+
+
+}, {
+    "id": 45,
+    "code": "45",
+    "name": "NAAMA",
+    "arabic_name": "النعامة"
+
+
+
+}, {
+    "id": 46,
+    "code": "46",
+    "name": "AIN-TEMOUCHENT",
+    "arabic_name": "عين تموشنت"
+
+
+
+}, {
+    "id": 47,
+    "code": "47",
+    "name": "GHARDAIA",
+    "arabic_name": "غرداية"
+
+
+
+}, {
+    "id": 48,
+    "code": "48",
+    "name": "RELIZANE",
+    "arabic_name": "غليزان"
+
+
+
+}, {
+    "id": 49,
+    "code": "49",
+    "name": "TIMIMOUN",
+    "arabic_name": "تيميمون"
+
+
+
+}, {
+    "id": 50,
+    "code": "50",
+    "name": "BORDJ BADJI MOKHTAR",
+    "arabic_name": "برج باجي المخطار"
+
+
+
+}, {
+    "id": 51,
+    "code": "51",
+    "name": "OULED DJELLAL",
+    "arabic_name": "اولاد جلال"
+
+
+
+}, {
+    "id": 52,
+    "code": "52",
+    "name": "BENI ABBES",
+    "arabic_name": "بني عباس"
+
+
+
+}, {
+    "id": 53,
+    "code": "53",
+    "name": "IN SALAH",
+    "arabic_name": "عين صالح"
+
+
+
+}, {
+    "id": 54,
+    "code": "54",
+    "name": "IN GUEZZAM",
+    "arabic_name": "عين قزام"
+
+
+
+}, {
+    "id": 55,
+    "code": "55",
+    "name": "TOUGGOURT",
+    "arabic_name": "تقورت"
+
+
+
+}, {
+    "id": 56,
+    "code": "56",
+    "name": "DJANET",
+    "arabic_name": "جانت"
+
+
+
+}, {
+    "id": 57,
+    "code": "57",
+    "name": "EL MEGAIER",
+    "arabic_name": "المغير"
+
+
+
+}, {
+    "id": 58,
+    "code": "58",
+    "name": "EL MENIAA",
+    "arabic_name": "المنيعة"
+
+
+
+}]

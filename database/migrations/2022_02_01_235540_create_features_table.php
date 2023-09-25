@@ -15,9 +15,10 @@ return new class() extends Migration {
         Schema::create('features', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('description');
+            $table->string('arabic_description');
             $table->boolean('consumable');
             $table->boolean('quota')->default(false);
-            $table->boolean('postpaid')->default(false);
             $table->unsignedInteger('periodicity')->nullable();
             $table->string('periodicity_type')->nullable();
             $table->softDeletes();

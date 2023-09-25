@@ -15,7 +15,7 @@ return new class() extends Migration {
         Schema::create('feature_tickets', function (Blueprint $table) {
             $table->id();
             $table->decimal('charges')->nullable();
-            $table->timestamp('expired_at')->nullable();
+            $table->timestamp('expired_at');
             $table->foreignIdFor(\LucasDotVin\Soulbscription\Models\Feature::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
 

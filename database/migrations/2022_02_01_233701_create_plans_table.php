@@ -16,8 +16,12 @@ return new class extends Migration {
             $table->id();
             $table->integer('grace_days')->default(0);
             $table->string('name');
+            $table->string('description');
+            $table->string('arabic_description');
             $table->unsignedInteger('periodicity');
             $table->string('periodicity_type');
+            $table->float('price');
+            $table->boolean('popular')->nullable()->default(false);
             $table->softDeletes();
             $table->timestamps();
         });
