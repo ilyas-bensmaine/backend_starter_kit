@@ -18,6 +18,7 @@ class UserLoginResource extends JsonResource
         return [
             'name' => $this->name,
             'email' => $this->email,
+            'language'=> $this->language,
             'permissions' => PermissionResource::collection($this->getAllPermissions()),
         ];
     }
