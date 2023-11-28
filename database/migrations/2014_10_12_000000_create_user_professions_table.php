@@ -19,7 +19,7 @@ class CreateUserProfessionsTable extends Migration
             $table->string('arabic_name');
             $table->string('description')->nullable();
             $table->string('arabic_description')->nullable();
-            $table->string('color_tag')->nullable();
+            $table->string('tag_color')->nullable();
             $table->string('icon')->nullable();
             $table->timestamps();
         });

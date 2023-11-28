@@ -63,19 +63,12 @@ class PlanSeeder extends Seeder
 
 
         //plans
-        $freelancer = Plan::create([ //just for tickets
-            'name'             => 'freelancer',
-            'description'             => '',
-            'arabic_description'             => '',
-            'periodicity_type' => PeriodicityType::Year,
-            'periodicity'      => 10,
-            'grace_days'       => 7,
-            'price'       => 0,
-        ]);
         $gold = Plan::create([
             'name'             => 'gold',
+            'arabic_name'      => 'ذهبي',
             'description'             => 'Plan pour les professionels',
             'arabic_description'             => 'ممتاز للمحترفين',
+            'tag_color'        => 'light-warning',
             'periodicity_type' => PeriodicityType::Month,
             'periodicity'      => 2,
             'grace_days'       => 7,
@@ -89,8 +82,10 @@ class PlanSeeder extends Seeder
 
         $silver = Plan::create([
             'name'             => 'silver',
+            'arabic_name'      => 'فضي',
             'description'             => 'Plan pour les intermédiaires',
             'arabic_description'             => 'للأعمال المتوسطة',
+            'tag_color'        => 'light-info',
             'periodicity_type' => PeriodicityType::Month,
             'periodicity'      => 2,
             'grace_days'       => 7,
@@ -101,8 +96,10 @@ class PlanSeeder extends Seeder
 
         $bronze = Plan::create([
             'name'             => 'bronze',
+            'arabic_name'      => 'برونزي',
             'description'             => 'Plan pour les débutants',
             'arabic_description'             => 'للمبتدئين',
+            'tag_color'        => 'light-secondary',
             'periodicity_type' => PeriodicityType::Month,
             'periodicity'      => 2,
             'grace_days'       => 7,
@@ -114,8 +111,10 @@ class PlanSeeder extends Seeder
         //yearly
         $gold = Plan::create([
             'name'             => 'gold',
+            'arabic_name'      => 'ذهبي',
             'description'             => 'Plan pour les professionels',
             'arabic_description'             => 'ممتاز للمحترفين',
+            'tag_color'        => 'warning',
             'periodicity_type' => PeriodicityType::Year,
             'periodicity'      => 1,
             'grace_days'       => 7,
@@ -129,9 +128,11 @@ class PlanSeeder extends Seeder
 
         $silver = Plan::create([
             'name'             => 'silver',
+            'arabic_name'      => 'فضي',
             'periodicity_type' => PeriodicityType::Year,
             'description'             => 'Plan pour les intermédiaires',
             'arabic_description'             => 'للأعمال المتوسطة',
+            'tag_color'        => 'info',
             'periodicity'      => 1,
             'grace_days'       => 7,
             'price'       => 79900,
@@ -141,9 +142,11 @@ class PlanSeeder extends Seeder
 
         $bronze = Plan::create([
             'name'             => 'bronze',
+            'arabic_name'      => 'برونزي',
             'periodicity_type' => PeriodicityType::Year,
             'description'             => 'Plan pour les débutants',
             'arabic_description'             =>'للمبتدئين',
+            'tag_color'        => 'secondary',
             'periodicity'      => 1,
             'grace_days'       => 7,
             'price'       => 49900,

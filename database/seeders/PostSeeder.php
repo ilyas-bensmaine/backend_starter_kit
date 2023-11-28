@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Post;
 use Illuminate\Database\Seeder;
-
+use Faker\Factory as Faker;
 class PostSeeder extends Seeder
 {
     /**
@@ -17,15 +17,15 @@ class PostSeeder extends Seeder
          \App\Models\Post::factory(50)->create();
         $pathToFile = public_path('img/example.png');
 
-
+        $faker = Faker::create();
         foreach (Post::all() as $post) {
             $post->addMedia($pathToFile)
                 ->preservingOriginal()
                 ->toMediaCollection('post_img');
-            $post->part_categories()->attach([random_int(1, 10 ) , random_int(1, 10),random_int(1, 10),random_int(1, 10)]);
+            $post->part_categories()->attach($faker->unique()->randomElements(range(1, 10), 4));
             $post->part_sub_categories()->attach(random_int(1, 10));
             $post->parts()->attach([random_int(1, 10)]);
-            $post->car_brands()->attach([random_int(1, 10 ) , random_int(1, 10),random_int(1, 10),random_int(1, 10)]);
+            $post->car_brands()->attach($faker->unique()->randomElements(range(1, 10), 4));
             $post->car_types()->attach([1]);
             $post->car_models()->attach([random_int(1, 10)]);
             $post->part_brands()->attach([random_int(1, 10)]);

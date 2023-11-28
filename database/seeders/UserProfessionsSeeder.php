@@ -19,21 +19,24 @@ class UserProfessionsSeeder extends Seeder
             "arabic_name" => 'تاجر',
             "description" => "Propriétaire d'un magasin de pièces détachées",
             "arabic_description" => "صاحب  محل بيع قطع غيار",
-            "icon"=>"settings"
+            "tag_color" => "light-success",
+            "icon"=>"Settings",
         ]);
         UserProfession::create([
             "name" => 'Artisanat',
             "arabic_name" => 'حرفي',
             "description" => 'tôlier, mécanicien ou éléctricien de vehicules',
             "arabic_description" => "ميكانيكي-كهربائي-مصلح هيكل",
-            "icon"=>"tool"
+            "tag_color" => "light-primary",
+            "icon"=>"Tool"
         ]);
         UserProfession::create([
             "name" => 'Utilisateur',
             "arabic_name" => 'مستخدم',
             "description" => "simple propriétaire de voiture",
             "arabic_description" => "صاحب سيارة",
-            "icon"=>"user"
+            "tag_color" => "light-info",
+            "icon"=>"User"
         ]);
     }
 }

@@ -19,7 +19,7 @@ class CreatePartSubCategoriesTable extends Migration
             $table->string('arabic_name')->nullable();
             $table->string('description')->nullable();
             $table->string('arabic_description')->nullable();
-            $table->string('color_tag')->nullable();
+            $table->string('tag_color')->nullable();
             $table->foreignId('part_category_id');
             $table->timestamps();
         });

@@ -19,7 +19,7 @@ class CreateCarModelsTable extends Migration
             $table->string('arabic_name')->nullable();
             $table->string('description')->nullable();
             $table->string('arabic_description')->nullable();
-            $table->string('color_tag')->nullable();
+            $table->string('tag_color')->nullable();
             $table->foreignId('car_brand_id');
             $table->integer('order')->default(1000);
             $table->timestamps();

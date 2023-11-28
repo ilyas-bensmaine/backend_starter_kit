@@ -15,6 +15,9 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
+        if ($request->isAdmin()) {
+            config()->set('auth.defaults.guard', 'admin');
+        }
         return $next($request);
     }
 }

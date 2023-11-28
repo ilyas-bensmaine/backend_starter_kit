@@ -21,7 +21,7 @@ class CreateCarBrandsTable extends Migration
             $table->string('arabic_description')->nullable();
             $table->string('logo')->nullable();
             $table->integer('order')->default(200);
-            $table->string('color_tag')->nullable();
+            $table->string('tag_color')->nullable();
             $table->timestamps();
         });
     }

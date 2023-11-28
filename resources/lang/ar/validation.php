@@ -139,9 +139,7 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
+        'arabic' => 'هذه القيمة يجب أن تحتوي على الأحرف العربية فقط.',
     ],
 
     /*

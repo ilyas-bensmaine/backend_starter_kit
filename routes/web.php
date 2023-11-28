@@ -1,12 +1,16 @@
 <?php
 
+use App\Events\TestEvent;
+use App\Http\Resources\Admin\UserResource;
 use App\Http\Resources\Backend\Admin\AdminLoginResource;
 use App\Http\Resources\Platform\User\UserLoginResource;
 use App\Models\Admin;
+use App\Models\Post;
 use App\Models\User;
+use App\Notifications\TestNotification;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Permission;
-
+use Faker\Factory as Faker;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,5 +23,7 @@ use Spatie\Permission\Models\Permission;
 */
 
 Route::get('/test', function () {
-    return new AdminLoginResource(Admin::findOrFail(1));
+    $faker = Faker::create();
+    $randomNumbers = $faker->unique()->randomElements(range(1, 10), 3);
+    return $randomNumbers;
 });

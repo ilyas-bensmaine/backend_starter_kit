@@ -127,6 +127,13 @@ return [
     'uploaded'             => 'Le fichier n\'a pu être téléversé.',
     'url'                  => 'Le format de l\'URL n\'est pas valide.',
     'uuid'                 => 'Ce champ doit être un UUID valide',
+    /**
+     *
+     *
+     *
+     */
+    'arabic' => 'Cet attribut doit contenir que des lettres arabes.',
+
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
@@ -139,9 +146,7 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
+        'arabic' => 'Cet attribut doit contenir que des lettres arabes.',
     ],
 
     /*

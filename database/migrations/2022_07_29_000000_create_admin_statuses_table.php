@@ -17,7 +17,7 @@ class CreateAdminStatusesTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('arabic_name')->unique();
-            $table->string('color_tag')->default('success');
+            $table->string('tag_color')->default('success');
             $table->timestamps();
         });
     }

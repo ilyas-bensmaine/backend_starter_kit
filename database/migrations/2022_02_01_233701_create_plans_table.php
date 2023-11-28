@@ -16,8 +16,10 @@ return new class extends Migration {
             $table->id();
             $table->integer('grace_days')->default(0);
             $table->string('name');
+            $table->string('arabic_name');
             $table->string('description');
             $table->string('arabic_description');
+            $table->string('tag_color');
             $table->unsignedInteger('periodicity');
             $table->string('periodicity_type');
             $table->float('price');

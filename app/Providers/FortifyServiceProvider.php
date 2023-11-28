@@ -6,8 +6,8 @@ use App\Actions\Fortify\CreateNewUser;
 use App\Actions\Fortify\ResetUserPassword;
 use App\Actions\Fortify\UpdateUserPassword;
 use App\Actions\Fortify\UpdateUserProfileInformation;
-use App\Http\Resources\Backend\Admin\AdminLoginResource;
-use App\Http\Resources\Platform\User\UserLoginResource;
+use App\Http\Resources\Admin\AdminLoginResource;
+use App\Http\Resources\User\UserLoginResource;
 use App\Models\Admin;
 use App\Models\User;
 use Illuminate\Cache\RateLimiting\Limit;
@@ -27,16 +27,16 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // if (request()->isAdmin()) {
-        //     config(['fortify.domain' => adminUrl()]);
-        //     config(['fortify.guard' => 'admin']);
-        // }
+        if (request()->isAdmin()) {
+            config()->set('fortify.domain', adminUrl());
+            config()->set('fortify.guard', 'admin');
+        }
 
         $this->app->instance(LoginResponse::class, new class implements LoginResponse {
             public function toResponse($request)
             {
                 if ($request->isAdmin()) {
-                    return response(new AdminLoginResource(Auth::user()));
+                    return new AdminLoginResource(Auth::user());
                 } else {
                     return new UserLoginResource(Auth::user());
                 }
@@ -56,7 +56,6 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::authenticateUsing(function (Request $request) {
             if ($request->isAdmin()) {
                 $admin = Admin::where('email', $request->email)->first();
-
                 if ($admin &&
                     Hash::check($request->password, $admin->password)) {
                     return $admin;

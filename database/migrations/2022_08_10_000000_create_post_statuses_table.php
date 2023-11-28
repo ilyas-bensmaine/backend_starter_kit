@@ -13,13 +13,13 @@ class CreatePostStatusesTable extends Migration
      */
     public function up()
     {
-        Schema::create('post_statuses', function (Blueprint $table) { 
+        Schema::create('post_statuses', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('arabic_name')->nullable();
             $table->string('description')->nullable();
             $table->string('arabic_description')->nullable();
-            $table->string('color_tag')->nullable();
+            $table->string('tag_color')->nullable();
             $table->timestamps();
         });
     }

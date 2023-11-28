@@ -17,19 +17,19 @@ class PostStatusSeeder extends Seeder
     {
         PostStatus::create([
             'name' => 'Active',
-            'color_tag' => 'light-success'
+            'tag_color' => 'light-success'
         ]);
         PostStatus::create([
             'name' => 'Inactive',
-            'color_tag' => 'light-danger'
+            'tag_color' => 'light-danger'
         ]);
         PostResponseStatus::create([
             'name' => 'Active',
-            'color_tag' => 'light-success'
+            'tag_color' => 'light-success'
         ]);
         PostResponseStatus::create([
             'name' => 'Inactive',
-            'color_tag' => 'light-danger'
+            'tag_color' => 'light-danger'
         ]);
     }
 }

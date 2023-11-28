@@ -13,9 +13,11 @@ use Laravel\Sanctum\HasApiTokens;
 use LucasDotVin\Soulbscription\Models\Concerns\HasSubscriptions;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements HasMedia
 {
+    use HasRoles;
     use HasApiTokens, HasFactory, Notifiable , InteractsWithMedia, HasSubscriptions;
 
     /**
